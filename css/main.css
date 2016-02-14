@@ -1,0 +1,26 @@
+
+.header {
+    background-image:url('http://cache1.asset-cache.net/xc/476131077.jpg?v=2&c=IWSAsset&k=2&d=vE2q-zeLh_5uAFJQh7vMfXdffeuGJsixZIVqLSja8OjgKH3edb0JnGxV1luVnptz0');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerabout {
+    font-size:25px;
+}
+
+.headercontact {
+    background-image:url('https://scontent-ams2-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/12410587_1121782454508335_6112450294907397721_n.jpg?oh=9ab581320d5107bcaf8f7be1a05c3193&oe=570B6699');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav a {
+    color: darkblue;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}

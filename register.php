@@ -1,0 +1,48 @@
+<?php
+
+require_once("./src/connection.php");
+
+if($_SERVER["REQUEST_METHOD"] === "POST"){
+    $user = User::RegisterUser($_POST['name'], $_POST['email'],
+        $_POST['password1'], $_POST['password2'], $_POST['description']);
+
+    if($user !== False){
+      //  session_start();
+        $_SESSION['userId']= $user->getId();
+        header("Location: showUser.php");
+    }
+    else{
+        echo('Zle dane rejestracji...');
+    }
+}
+
+?>
+
+<form action="register.php" method="post">
+    <label>
+        Email:
+        <input type="email" name="email">
+    </label>
+    <br>
+    <label>
+        Name:
+        <input type="text" name="name">
+    </label>
+    <br>
+    <label>
+        Password:
+        <input type="password" name="password1">
+    </label>
+    <br>
+    <label>
+        Repeat password:
+        <input type="password" name="password2">
+    </label>
+    <br>
+    <label>
+        Description:
+        <input type="text" name="description">
+    </label>
+    <input type="submit">
+</form>
+
