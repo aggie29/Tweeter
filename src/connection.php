@@ -11,7 +11,7 @@ $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbBaseName );
 if($conn->connect_errno){//wypisuje nr bledu
     die("Db connection not initialized properly" . $conn->connect_error);
 }
-echo("Connection initialized properly");
+//echo("Connection initialized properly");
 
 User::SetConnection($conn);
 Tweet::SetConnection($conn);
@@ -20,7 +20,7 @@ Comment::SetConnection($conn);
 //rejestracja
 
 /*$user1 = User::RegisterUser("Ela23", "ela23@gmail.com", "ela23", "ela23", "Opis Eli23");
-var_dump($user1);*/
+var_dump($user1);
 
 
 //login
@@ -50,9 +50,8 @@ var_dump($user3);
 
 //$user1->setDescription("Nowy opis");
 //$user1->saveTODB();
-
-$tweet1 = Tweet::CreateTweet(3, "New tweet", "2016-03-03");
-var_dump($tweet1);
+//$tweet1 = Tweet::CreateTweet(3, "New tweet", "2016-03-03");
+//var_dump($tweet1);
 
 /*$tweet2 = Tweet::LoadTweetById(66);
 $tweet2->setText("Nowy opis");
