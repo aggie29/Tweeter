@@ -71,8 +71,9 @@ class Comment
     private $id;
     private $user_id;
     private $tweet_id;
-    private $post_date;
     private $text;
+    private $post_date;
+
 
     public function __construct($newId, $newUserId, $newTweetId, $newText, $newPostDate)
     {
@@ -142,7 +143,7 @@ class Comment
         if($result !== FALSE){
             if($result->num_rows>0){
                 while($row = $result-> fetch_assoc()){
-                    $comment = new Comment($row["id"], $row["user_id"], $row["text"], $row["post_date"]);
+                    $comment = new Comment($row["id"], $row["tweet_id"] ,$row["user_id"], $row["text"], $row["post_date"]);
                     $ret[] = $comment;
                 }
             }

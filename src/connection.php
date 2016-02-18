@@ -48,9 +48,12 @@ var_dump($user3);
 //$user1 = User::RegisterUser("Ela26", "ela26@gmail.com", "ela26", "ela26", "Opis Eli26");
 //var_dump($user1);
 
+$comment1 = Comment::CreateComment(118, 1,  'first comment', '18.02.2016');
+var_dump($comment1);
+
 //$user1->setDescription("Nowy opis");
 //$user1->saveTODB();
-//$tweet1 = Tweet::CreateTweet(3, "New tweet", "2016-03-03");
+//$tweet1 = Tweet::CreateTweet(1, "lalalaalalalalalalal", "2016-03-03");
 //var_dump($tweet1);
 
 /*$tweet2 = Tweet::LoadTweetById(66);

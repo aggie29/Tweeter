@@ -8,9 +8,7 @@
 <body>
 
 <ul class="nav nav-pills">
-    <li  class"active"><a href="register.php">Register</a></li>
-    <li  class"active"><a href="editUser.php">Edit</a></li>
-
+    <li  class"active"><a href="index_main.php">Main</a></li>
 
 </ul>
 </body>

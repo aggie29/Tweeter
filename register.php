@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         header("Location: showUser.php");
     }
     else{
-        echo('Zle dane rejestracji...');
+        echo('Wrong data');
     }
 }
 
@@ -24,6 +24,15 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     <link rel="stylesheet" href="CSS/main.css">
 
 </head>
+
+<body>
+
+<ul class="nav nav-pills">
+    <li  class"active"><a href="index_main.php">Main</a></li>
+</ul>
+
+</body>
+
 
 <form action="register.php" method="post">
     <label>
@@ -50,6 +59,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         Description:
         <input type="text" name="description">
     </label>
-    <input type="submit">
+    <input type="submit" name="submit">
 </form>
 
